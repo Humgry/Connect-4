@@ -45,8 +45,8 @@ def win_cond():
     # diagonal up
     for i in range(4):
         for ii in range(1,4):
-            if board[i][-ii] == board[i+1][-(ii+1)] and board[i][-ii] == board[i+2][-(ii+2)] and board[i][-ii] == board[i+3][-(ii+3)] and board[i][ii] != '':
-                return True, board[i][ii]
+            if board[i][-ii] == board[i+1][-(ii+1)] and board[i][-ii] == board[i+2][-(ii+2)] and board[i][-ii] == board[i+3][-(ii+3)] and board[i][-ii] != '':
+                return True, board[i][-ii]
     # diagonal down
     for i in range(3):
         for ii in range(4):
